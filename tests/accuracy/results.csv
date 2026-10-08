@@ -1,0 +1,1 @@
+test_id,device,reference_width_m,measured_width_m,abs_error_width_m,pct_error_width,reference_height_m,measured_height_m,abs_error_height_m,pct_error_height,lighting,distance_m,surface_type,target_type,tracking_quality,depth_availability,result,notes

@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- ARCore is OPTIONAL at install time: the app must start on any device
+         and report capabilities honestly instead of failing to install. -->
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application>
+        <meta-data android:name="com.google.ar.core" android:value="optional" />
+    </application>
+</manifest>

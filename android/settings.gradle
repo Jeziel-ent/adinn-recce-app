@@ -1,0 +1,10 @@
+pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
+plugins { id("com.facebook.react.settings") }
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+rootProject.name = 'AdinnRecce'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+
+// Standalone Kotlin measurement engine (library module living at repo root)
+include ':measurement-engine'
+project(':measurement-engine').projectDir = file('../measurement-engine')
